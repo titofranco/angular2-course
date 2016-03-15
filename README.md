@@ -12,7 +12,10 @@ git clone https://github.com/mschwarzmueller/angular-2-beta-boilerplate.git
 ```
 2: Install packages
 ```
+npm install -g typescript
+npm install tsd -g
 npm install
+npm install lite-server --save-dev
 ```
 3: Start server (includes auto refreshing) and gulp watcher
 ```
