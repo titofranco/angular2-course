@@ -15,9 +15,17 @@ git clone https://github.com/mschwarzmueller/angular-2-beta-boilerplate.git
 npm install -g typescript
 npm install tsd -g
 npm install
-npm install lite-server --save-dev
+
 ```
 3: Start server (includes auto refreshing) and gulp watcher
 ```
 npm start
+```
+If you get errors with lite-server at this string at the end of /etc/sysctl.conf
+```
+fs.inotify.max_user_watches = 524288
+```
+And then run:
+```
+sudo sysctl -p
 ```
