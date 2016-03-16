@@ -20,11 +20,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             FirstComponentComponent = (function () {
                 function FirstComponentComponent() {
+                    this.name = "Carlos";
                 }
                 FirstComponentComponent = __decorate([
                     core_1.Component({
                         selector: 'first-component',
-                        template: "\n       <h3>My first component</h3>\n    "
+                        template: "\n        <h3>This is the first component made by <span [style.color]=\"inputElement.value === 'yes' ? 'yellow' : ''\"> {{name}} </span>\n         <span [class.is-awesome]=\"inputElement.value === 'yes'\"> It is awesome </span> </h3>\n        <br>\n        Is it awesome?\n        <input type=\"text\" #inputElement (keyup)=\"0\">\n        <br>\n        <button [disabled]=\"inputElement.value !== 'yes'\"> Only enabled if 'yes' was entered</button>\n        ",
+                        styleUrls: ['src/css/first-component.css']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], FirstComponentComponent);
@@ -35,4 +37,4 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     }
 });
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpcnN0LWNvbXBvbmVudC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFTQTtnQkFBQTtnQkFDQSxDQUFDO2dCQVJEO29CQUFDLGdCQUFTLENBQUM7d0JBQ1AsUUFBUSxFQUFFLGlCQUFpQjt3QkFDM0IsUUFBUSxFQUFFLDRDQUVUO3FCQUNKLENBQUM7OzJDQUFBO2dCQUdGLDhCQUFDO1lBQUQsQ0FEQSxBQUNDLElBQUE7WUFERCw2REFDQyxDQUFBIiwiZmlsZSI6ImZpcnN0LWNvbXBvbmVudC5jb21wb25lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NvbXBvbmVudH0gZnJvbSAnYW5ndWxhcjIvY29yZSdcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdmaXJzdC1jb21wb25lbnQnLFxuICAgIHRlbXBsYXRlOiBgXG4gICAgICAgPGgzPk15IGZpcnN0IGNvbXBvbmVudDwvaDM+XG4gICAgYFxufSlcblxuZXhwb3J0IGNsYXNzIEZpcnN0Q29tcG9uZW50Q29tcG9uZW50IHtcbn0iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpcnN0LWNvbXBvbmVudC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFnQkE7Z0JBQUE7b0JBQ0ksU0FBSSxHQUFHLFFBQVEsQ0FBQTtnQkFDbkIsQ0FBQztnQkFoQkQ7b0JBQUMsZ0JBQVMsQ0FBQzt3QkFDUCxRQUFRLEVBQUUsaUJBQWlCO3dCQUMzQixRQUFRLEVBQUUsNmNBUUw7d0JBQ0wsU0FBUyxFQUFFLENBQUMsNkJBQTZCLENBQUM7cUJBQzdDLENBQUM7OzJDQUFBO2dCQUlGLDhCQUFDO1lBQUQsQ0FGQSxBQUVDLElBQUE7WUFGRCw2REFFQyxDQUFBIiwiZmlsZSI6ImZpcnN0LWNvbXBvbmVudC5jb21wb25lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NvbXBvbmVudH0gZnJvbSAnYW5ndWxhcjIvY29yZSdcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdmaXJzdC1jb21wb25lbnQnLFxuICAgIHRlbXBsYXRlOiBgXG4gICAgICAgIDxoMz5UaGlzIGlzIHRoZSBmaXJzdCBjb21wb25lbnQgbWFkZSBieSA8c3BhbiBbc3R5bGUuY29sb3JdPVwiaW5wdXRFbGVtZW50LnZhbHVlID09PSAneWVzJyA/ICd5ZWxsb3cnIDogJydcIj4ge3tuYW1lfX0gPC9zcGFuPlxuICAgICAgICAgPHNwYW4gW2NsYXNzLmlzLWF3ZXNvbWVdPVwiaW5wdXRFbGVtZW50LnZhbHVlID09PSAneWVzJ1wiPiBJdCBpcyBhd2Vzb21lIDwvc3Bhbj4gPC9oMz5cbiAgICAgICAgPGJyPlxuICAgICAgICBJcyBpdCBhd2Vzb21lP1xuICAgICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiAjaW5wdXRFbGVtZW50IChrZXl1cCk9XCIwXCI+XG4gICAgICAgIDxicj5cbiAgICAgICAgPGJ1dHRvbiBbZGlzYWJsZWRdPVwiaW5wdXRFbGVtZW50LnZhbHVlICE9PSAneWVzJ1wiPiBPbmx5IGVuYWJsZWQgaWYgJ3llcycgd2FzIGVudGVyZWQ8L2J1dHRvbj5cbiAgICAgICAgYCxcbiAgICBzdHlsZVVybHM6IFsnc3JjL2Nzcy9maXJzdC1jb21wb25lbnQuY3NzJ11cbn0pXG5cbmV4cG9ydCBjbGFzcyBGaXJzdENvbXBvbmVudENvbXBvbmVudCB7XG4gICAgbmFtZSA9IFwiQ2FybG9zXCJcbn0iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=
